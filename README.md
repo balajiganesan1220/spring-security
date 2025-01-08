@@ -15,4 +15,4 @@ This is a sample project demonstrating the use of Spring Boot and Spring Securit
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/spring-security.git
+   git clone https://github.com/balajiganesan1220/spring-security.git
