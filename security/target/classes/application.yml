@@ -1,0 +1,54 @@
+server:
+  port: 8081
+
+spring:
+  application:
+    name: security
+
+#
+#  security:
+#    user:
+#      name: admin
+#      password: admin
+
+#h2 database
+#  datasource:
+#    url: jdbc:h2:mem:testdb
+#    driver-class-name: org.h2.Driver
+#    username: sa
+#    password:
+#    platform: h2
+#  h2:
+#    console:
+#      enabled: true
+#      path: /h2-console
+#  jpa:
+#    hibernate:
+#      ddl-auto: update
+#    database-platform: org.hibernate.dialect.H2Dialect
+
+#PostgresSQL
+  datasource:
+    url: jdbc:postgresql://localhost:5432/security
+    username: postgres
+    password: balaji
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+      database-platform: org.hibernate.dialect.PostgresSQLDialect
+
+  app:
+    jwtSecrete: mySecretKey123912738goishfishdiiodsdo84yur7847y88y8yuih84iurg8478gtu874irugthfd389hfidy8
+    jwtExpirationMs: 3000000
+
+
+logging:
+  level:
+    org:
+      springframework: DEBUG
+      springframework.security: DEBUG
+      hibernate.SQL: DEBUG
+    com:
+      example:
+        security: DEBUG
